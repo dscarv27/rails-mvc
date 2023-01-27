@@ -4,5 +4,10 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "articles#index"
 
-  get 'products', to: 'products#index'
+  # get 'products', to: 'products#index'
+  # get 'products/new', to: 'products#new'
+  # post 'products', to: 'products#create'
+  # get 'products/:id', to: 'products#show'
+
+  resources :products #o rails entende todos os verbos das rotas com o resources
 end
